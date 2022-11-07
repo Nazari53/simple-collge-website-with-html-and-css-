@@ -1,0 +1,186 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/design1.css')}}">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Camel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #e9e9e9;
+    }
+
+    .header h1 {
+      color: #222222;
+      font-size: 30px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      margin-left: 190px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(1) {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color: #2e3550;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>B.N. Bahadur institute of managment science </h1>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </header>
+    <aside class="left">
+      <img src="./assets/html/mr-camel.jpg" width="160px" /
+      <br><br>
+      <p>""<br>- BIMS COLLEGE</p>
+    </aside>
+    <main class="content">
+      <h2>About BIMS COLLEGE</h2>
+      <p>University of Mysore set up the Department of studies in Business Administration (DOSBA) in 1974. The great leap forward came in 2002.  Dr. B.N. Bahadur an alumnus of the University  and President of the B.N. Bahadur Family Foundation of Michigan, U.S.A made handsome donation, which together with contribution from the University  Established  “B.N. Bahadur Institute of Management Sciences”,(BIMS) situated on the northern edge of “Manasagangothri”. BIMS, set in a sylvan expanse, is a unique piece of architecture.  Spacious classrooms, computer Lab with 54 systems, 200 seat Auditorium, 10499 Books are stacked in  library with subscription to 22 Journal & 17 Dailies and sports facilities are available for around 400 students. In addition to the conduct of regular MBA programme, the Institute is expanding its horizon by offering a variety of management programs along with research and consultancy.  Networking with other business schools and corporates has enabled course offerings to keep pace with the highly competitive business world and changing needs of the managerial market.</p>
+      <h2 style="color: red, textarea: center">department</h2>
+      <p>BIMS has 5 
+        <li>
+         <ul> finance</ul>
+         <ul> human resource</ul>
+         <ul> marketing</ul>
+         <ul> project managment</ul>
+         <ul>international business</ul>
+        </li>
+      </p>
+      <hr><br>
+      <h2>How Can apply ?</h2>
+      <table>
+        <tr>
+          <th>finance</th>
+          <th>Human resource</th>
+          <th>Marketing </th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-broom"></i></td>
+          <td><i class="fas fa-archive"></i></td>
+          <td><i class="fas fa-trailer"></i></td>
+        </tr>
+        <tr>
+          <td>having bachlor degree in finance or commerce</td>
+          <td>having bachlore degree in B.a, BBA</td>
+          <td>having bachlore degree in B.a, BBA</td>
+        </tr>
+        <tr>
+      </table>
+      <form>
+        <label>Email: <input type="text" name="email"></label><br>
+        <label> Mobile: <input type="text" name="mobile"> </label><br>
+        <textarea name="comments" rows="4">Enter your message</textarea><br>
+        <input type="submit" value="Submit" /><br>
+      </form>
+    </main>
+    <footer class="footer">&copy; Copyright BMIS COLLEGE</footer>
+  </div>
+
+
+
+</body>
+</html>
+{% endblock %}
